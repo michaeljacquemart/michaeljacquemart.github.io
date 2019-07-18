@@ -7,6 +7,12 @@ body{
 	background: #1E1F25;
 }
 .principal {
+ position: absolute;
+ top:0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ margin: auto;
  background: #cfd0d0;
  width: 40%;
  height: 40%;
@@ -20,11 +26,13 @@ body{
 </head>
 
 <body>
-
+  <form>
+    <input type="button" value="Back" onclick="history.back()">
+  </form>
 <div class="principal">
-  <div>
+  <div style="margin-top:10%;">
     <strong>Michael Jacquemart</strong>
-    michaeljacquemart.webdev@gmail.com
+    <p>michaeljacquemart.webdev@gmail.com<p>
     <p>+32 495 11 35 11</p>
   </div>
   <div>
