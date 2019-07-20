@@ -1,0 +1,15 @@
+Liste des sites à comparer ;
+-logic-immo
+-zimmo
+-immo.vlan
+-immoweb
+-vivastreet
+-2ememain
+-immotransit
+-jannonce
+-immotop.lu
+-kotaliege
+-immo.trovit.be
+-skot.be
+-realo.be
+
