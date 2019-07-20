@@ -5,7 +5,7 @@ var pass1 = prompt('Please Enter Your Password',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(-1);
-if (pass1.toLowerCase() == "immoweb#banqueroute") {
+if (pass1.toLowerCase() == "becode") {
 alert('You Got it Right!');
 window.open('main_page.html');
 break;
