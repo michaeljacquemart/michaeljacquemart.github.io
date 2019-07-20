@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Propr.io</title>
+  <script type="text/javascript">
+
+   /* This program will swap an image when it is clicked by using the getElementById() method
+   The program will use an image_tracker variable to keep track of which image is currently displayed
+   We can use an IF statement to check if the orange picture is being displayed,
+   then swap with the blue one, and vice versa.
+   */
+
+   var search_tracker = 'search';
+
+   function change_search(){
+   var image = document.getElementById('search');
+   if(search_tracker=='search'){
+   image.src='img/home/map.png';
+   search_tracker='map';
+   }
+   else{
+   image.src='img/home/search.png';
+   search_tracker='search';
+   }
+   }
+
+   var menu_tracker = 'search';
+
+   function change_menu(){
+   var image = document.getElementById('menu');
+   if(menu_tracker=='search'){
+   image.src='img/home/leftmenu/leftmenu_gestionnaire.png';
+   menu_tracker='gestionnaire';
+   }
+   else if(menu_tracker=='gestionnaire'){
+   image.src='img/home/leftmenu/leftmenu_annonce.png';
+   menu_tracker='annonce';
+   }
+   else if(menu_tracker=='annonce'){
+   image.src='img/home/leftmenu/leftmenu_rechercher.png';
+   menu_tracker='search';
+   }
+   }
+
+   var login_tracker = 'bouton';
+
+   function change_login(){
+   var image = document.getElementById('login');
+   if(login_tracker=='bouton'){
+   image.src='img/home/login/login_formulaire.png';
+   login_tracker='formulaire';
+   }
+   else if(login_tracker=='formulaire'){
+   image.src='img/home/login/login_bouton.png';
+   login_tracker='bouton';
+   }
+   }
+
+   </script>
+</head>
+<body>
+<img class="header" src="img/home/en_tete.png" style="width:100%; margin-bottom: 10px;"/>
+<img id="menu" src="img/home/leftmenu/leftmenu_rechercher.png" style="float:left;" onclick="change_menu();"/>
+<img src="img/home/search.png" alt="Search" id="search" style="width:35%; float:left; margin-top:3%;" onclick="change_search();">
+<img id="login" src="img/home/login/login_bouton.png" style="float:right;" onclick="change_login();"/>
+<img src="img/home/resultats.png" style="float:right; width:40%;"/>
+
+
+
+
+</body>
+</html>
