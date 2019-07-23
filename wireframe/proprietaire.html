@@ -21,8 +21,43 @@
 
       }
 
-      var onglets_tracker = ''
+
+      var onglets_tracker = 'mesbiens'
       function change_onglets(){
+        var image = document.getElementById('onglets');
+        if(onglets_tracker=='mesbiens'){
+        image.src='img/proprietaire/proprietaire_meslocataires.png';
+        onglets_tracker='meslocataires';
+        }
+        else if(onglets_tracker=='meslocataires'){
+        image.src='img/proprietaire/proprietaire_finances.png';
+        onglets_tracker='finances';
+        }
+        else if(onglets_tracker=='finances'){
+        image.src='img/proprietaire/proprietaire_agenda.png';
+        onglets_tracker='agenda';
+        }
+        else if(onglets_tracker=='agenda'){
+        image.src='img/proprietaire/proprietaire_documents.png';
+        onglets_tracker='documents';
+        }
+        else if(onglets_tracker=='documents'){
+        image.src='img/proprietaire/proprietaire_partenaires.png';
+        onglets_tracker='partenaires';
+        }
+        else if(onglets_tracker=='partenaires'){
+        image.src='img/proprietaire/proprietaire_news-infosutiles.png';
+        onglets_tracker='news_infosutiles';
+        }
+        else if(onglets_tracker=='news_infosutiles'){
+        image.src='img/proprietaire/proprietaire_servicessupp.png';
+        onglets_tracker='servicessupp';
+        }
+        else if(onglets_tracker=='servicessupp'){
+        image.src='img/proprietaire/proprietaire_mesbiens.png';
+        onglets_tracker='mesbiens';
+        }
+
 
       }
 </script>
@@ -34,7 +69,7 @@
     <input type="button" value="Back" onclick="history.back()">
   </form>
   <img  id="en_tete" src="img/proprietaire/proprietaire_entete_open.png" onclick="change_entete()" style="width:100%"/>
-  <img  id="onglets" src="img/proprietaire/proprietaire_mesbiens.jpg" onclick="change_onglets()" style="width:100%; margin-left:28px;"/>
+  <img  id="onglets" src="img/proprietaire/proprietaire_mesbiens.jpg" onclick="change_onglets()" style="width:100%; margin-left:1.85%;"/>
 
 
 </body>
