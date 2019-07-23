@@ -4,25 +4,37 @@
   <meta charset="utf-8">
   <title>Propr.io</title>
   <style>
-  below_header {
-  display: grid;
-  grid-template-columns: 250px 400px;
-  grid-template-rows: 100px 300px;
-  }
-choix_principal {
-  grid-column: 1; grid-row: 1;
-}
-tarifs {
-  grid-column: 1; grid-row: 2;
-}
-</style>
+  </style>
+<script type="text/javascript">
+
+      var entete_tracker = 'open';
+      function change_entete(){
+      var image = document.getElementById('en_tete');
+      if(entete_tracker=='open'){
+      image.src='img/proprietaire/proprietaire_entete_closed.png';
+      entete_tracker='closed';
+      }
+      else if(entete_tracker=='closed'){
+      image.src='img/proprietaire/proprietaire_entete_open.png';
+      entete_tracker='open';
+      }
+
+      }
+
+      var onglets_tracker = ''
+      function change_onglets(){
+
+      }
+</script>
+
+
 </head>
 <body>
   <form>
     <input type="button" value="Back" onclick="history.back()">
-  </form>	
-  <img src="img/proprietaire/proprietaire.png" style="width:100%"/>
-
+  </form>
+  <img  id="en_tete" src="img/proprietaire/proprietaire_entete_open.png" onclick="change_entete()" style="width:100%"/>
+  <img  id="onglets" src="img/proprietaire/proprietaire_mesbiens.jpg" onclick="change_onglets()" style="width:100%; margin-left:28px;"/>
 
 
 </body>
