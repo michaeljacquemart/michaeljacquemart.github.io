@@ -2,32 +2,10 @@
 
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-
 <title>Michael Jacquemart</title>
+<meta charset="utf-8">
 <meta name="description" content="Michael Jacquemart">
 <meta name="author" content="SitePoint">
-
-<script>
-var text = document.getElementById('text');
-var newDom = '';
-var animationDelay = 6;
-
-for(let i = 0; i < text.innerText.length; i++)
-{
-		newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
-}
-
-text.innerHTML = newDom;
-var length = text.children.length;
-
-for(let i = 0; i < length; i++)
-{
-		text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
-}
-
-</script>
-
 <style>
 	* {
 	margin: 0;
@@ -153,6 +131,27 @@ display: block;
 <div>
 		<img class="logo" src="/logos/logo2.png" alt="Logo de Propr.io">
 </div>
+
+<script>
+var text = document.getElementById('text');
+var newDom = '';
+var animationDelay = 6;
+
+for(let i = 0; i < text.innerText.length; i++)
+{
+		newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+}
+
+text.innerHTML = newDom;
+var length = text.children.length;
+
+for(let i = 0; i < length; i++)
+{
+		text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+}
+
+</script>
+
 <div class="center" style="height: 60%;">
         <p id="text">	Propr.io est un service proposé aux propriétaires de biens à louer, du propriétaire d’un seul bien au rentier confirmé.<br>
 					Ce service présente deux composantes principales ;<br><br>
