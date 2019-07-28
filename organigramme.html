@@ -8,7 +8,7 @@
 .tree * {margin: 0; padding: 0;}
 .tree ul {
 	padding-top: 20px; position: relative;
-	
+
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -18,7 +18,7 @@
 	list-style-type: none;
 	position: relative;
 	padding: 20px 5px 0 5px;
-	
+
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -34,14 +34,14 @@
 	right: auto; left: 50%;
 	border-left: 1px solid #8dc63f;
 }
-/*We need to remove left-right connectors from elements without 
+/*We need to remove left-right connectors from elements without
 any siblings*/
 .tree li:only-child::after, .tree li:only-child::before {
 	display: none;
 }
 /*Remove space from the top of single children*/
 .tree li:only-child{ padding-top: 0;}
-/*Remove left connector from first child and 
+/*Remove left connector from first child and
 right connector from last child*/
 .tree li:first-child::before, .tree li:last-child::after{
 	border: 0 none;
@@ -73,13 +73,13 @@ right connector from last child*/
 	font-family: arial, verdana, tahoma;
 	font-size: 0.85em;
 	display: inline-block;
-  
+
   /*
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
   */
-	
+
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
@@ -139,9 +139,9 @@ div.tree > ul > li > a {
   /* border: 1px solid #aaa; */
 }
 /*Connector styles on hover*/
-.tree li a:hover+ul li::after, 
-.tree li a:hover+ul li::before, 
-.tree li a:hover+ul::before, 
+.tree li a:hover+ul li::after,
+.tree li a:hover+ul li::before,
+.tree li a:hover+ul::before,
 .tree li a:hover+ul ul::before{
 	border-color:  #aaa;
 }
@@ -149,64 +149,37 @@ div.tree > ul > li > a {
 </head>
 
 <body>
-	
+
   <form>
     <input type="button" value="Back" onclick="history.back()">
-  </form>	
+  </form>
+
 <div class="tree">
     <ul>
         <li>
-            <a href="#">Ninja Board</a>
+            <a href="#">Propr.io</a>
             <ul>
                 <li>
-                    <a href="#">Staff</a>
+                    <a href="wireframe/home.html">Home<br>(s'ouvre sur le premier onglet ci-dessous)</a>
                     <ul class="vertical">
-                        <li><a href="#">Human Resources</a></li>
-                        <li><a href="#">Finance</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">IT/IS</a></li>
-                        <li><a href="#">Service Delivery</a></li>
+                        <li><a href="wireframe/home.html">Rechercher un bien</a></li>
+                        <li><a href="#">Obtenir un gestionnaire</a></li>
+                        <li><a href="#">Gérer mes locataires</a></li>
+                        <li><a href="#">Placer une annonce</a></li>
+                        <li><a href="#">Service et tarifs</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">BAMs</a>
+                    <a href="#">Se connecter</a>
                     <ul class="vertical">
-                        <li><a href="#">Applications</a></li>
-                        <li><a href="#">Mobility</a></li>
-                        <li><a href="#">Collaboration</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Knowledge Committee</a></li>
-                <li>
-                    <a href="#">Delivery Lund</a>
-                    <ul>
-                        <li>
-                            <a href="#">Team Leads</a>
-                            <ul class="vertical">
-                                <li><a href="#">Team 1</a></li>
-                                <li><a href="#">Team 2</a></li>
-                                <li><a href="#">Team 3</a></li>
-                                <li><a href="#">Team 4</a></li>
-                                <li><a href="#">Team 5</a></li>
-                                <li><a href="#">Team 6</a></li>
-                                <li><a href="#">Team 7</a></li>
-                                <li><a href="#">Team 8</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Sales</a></li>
+                        <li><a href="wireframe/proprietaire.html">compte propriétaire</a></li>
+                        <li><a href="wireframe/locataire.html">compte locataire (à faire)</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Delivery Stockholm</a>
-                    <ul>
-                        <li>
-                            <a href="#">Team Leads</a>
-                            <ul class="vertical">
-                                <li><a href="#">Hokutō</a></li>
-                                <li><a href="#">The Other Team</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Sales</a></li>
+                    <a href="#">S'inscrire</a>
+                    <ul class="vertical">
+                        <li><a href="#">à faire</a></li>
                     </ul>
                 </li>
             </ul>

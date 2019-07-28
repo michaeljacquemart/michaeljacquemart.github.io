@@ -1,7 +1,33 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="fr">
 <head>
+  <meta charset="utf-8">
+
 <title>Michael Jacquemart</title>
+<meta name="description" content="Michael Jacquemart">
+<meta name="author" content="SitePoint">
+
+<script>
+var text = document.getElementById('text');
+var newDom = '';
+var animationDelay = 6;
+
+for(let i = 0; i < text.innerText.length; i++)
+{
+		newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+}
+
+text.innerHTML = newDom;
+var length = text.children.length;
+
+for(let i = 0; i < length; i++)
+{
+		text.children[i].style['animation-delay'] = animationDelay * i + 'ms';
+}
+
+</script>
+
 <style>
 	* {
 	margin: 0;
@@ -76,17 +102,77 @@ display: block;
  width: 20%;
  margin-bottom: -20px;
 }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            background-color: #232323;
+            color: #fff;
+            font-family: Calibri, sans-serif;
+        }
+
+        .center{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p{
+            width: 70%;
+            font-size: 20px;
+            display: block;
+            text-align: left;
+        }
+
+        .char{
+            font-size: 40px;
+            height: 40px;
+            animation: an 1s ease-out 1 both;
+            display: inline-block;
+        }
+
+        @keyframes an{
+            from{
+                opacity: 0;
+                transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+            }
+            to{
+                opacity: 1;
+                transform: perspective(500px) translate3d(0, 0, 0);
+            }
+        }
 </style>
 </head>
 
 <body>
-	<img class="logo" src="/logos/logo2.png" alt="Logo de Propr.io">
-
-<ul>
-	<li><a href="organigramme.html" style="text-decoration: none; color: white;" >Organigramme</a></li>
-	<li><a href="wireframe/home.html" style="text-decoration: none; color: white;" >Wireframe</a></li>
-	<li><a href="contact.html" style="text-decoration: none; color: white;" >Contact us</a></li>
-</ul>
+<div>
+		<img class="logo" src="/logos/logo2.png" alt="Logo de Propr.io">
+</div>
+<div class="center" style="height: 60%;">
+        <p id="text">	Propr.io est un service proposé aux propriétaires de biens à louer, du propriétaire d’un seul bien au rentier confirmé.<br>
+					Ce service présente deux composantes principales ;<br><br>
+					- une plateforme en ligne (site web et app) permettant de centraliser toutes les informations et services nécessaires à une gestion complète et sereine du patrimoine immobilier et,<br><br>
+					- un gestionnaire locatif personnel à disposition 7j/7.<br><br>
+					Un gestionnaire locatif a pour objectif d’accompagner les propriétaires bailleurs en leur proposant différents services. Lorsque nos clients propriétaires
+					d’un ou plusieurs biens immobiliers	souhaitent les mettre en location, nos gestionnaires locatifs prennent en charge la totalité du processus de mise en location du bien,
+					de sélection du locataire, d'estimation du montant du loyer, de promotion du bien, d’état des lieux, etc.
+					Ensuite, nos gestionnaires locatifs s’occupent de la gestion locative courante du bien immobilier en location, grâce à un grand nombre de missions et aux relations de confiance
+					qu’ils entretiennent avec le locataire et les autres parties prenantes. L’objectif final étant de faire gagner du temps, de l’argent et de la tranquillité.
+				</p>
+</div>
+<div style="margin-top: -20%;">
+	<ul>
+		<li><a href="organigramme.html" style="text-decoration: none; color: white;" >Organigramme</a></li>
+		<li><a href="wireframe/home.html" style="text-decoration: none; color: white;" >Wireframe</a></li>
+		<li><a href="contact.html" style="text-decoration: none; color: white;" >Contact us</a></li>
+	</ul>
+</div>
 </body>
+
 
 </html>
