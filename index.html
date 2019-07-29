@@ -1,16 +1,148 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="fr">
 <head>
 <title>Michael Jacquemart</title>
-<script type="text/javascript" src="password.js"></script>
+<meta charset="utf-8">
+<meta name="description" content="Michael Jacquemart">
+<meta name="author" content="SitePoint">
+<style>
+	* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+body{
+	background: #1E1F25;
+}
+ul{
+	display: flex;
+	width: 100%;
+	height: 80vh;
+	margin: auto;
+	max-width: 1000px;
+	justify-content: space-between;
+	text-align: center;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ebebeb;
+	min-width: 80px;
+	margin: auto;
+}
+
+li:hover {
+  background-image: url('http://scottyzen.com/cp/button.png');
+  background-size: 100% 100%;
+  color: #27262c;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #ef816c;
+	font-weight: bold;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.shameless-plug{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  padding: 8px 20px;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.logo {
+display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 20%;
+ margin-bottom: -20px;
+}
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            background-color: #232323;
+            color: #fff;
+            font-family: Calibri, sans-serif;
+        }
+
+        .center{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p{
+            width: 70%;
+            font-size: 20px;
+            display: block;
+            text-align: left;
+        }
+
+        .char{
+            font-size: 40px;
+            height: 40px;
+            animation: an 1s ease-out 1 both;
+            display: inline-block;
+        }
+</style>
 </head>
 
 <body>
-	<CENTER>
-<FORM>
-<input type="button" value="Enter Protected Area" onClick="passWord()">
-</FORM>
-</CENTER>
+<div>
+		<img class="logo" src="/logos/logo10.png" alt="Logo de Propr.io" style="margin-top:10px; margin-bottom: 10%;">
+</div>
+
+<div class="center" style="height: 60%;">
+        <p id="text">	Propr.io est un service proposé aux propriétaires de biens à louer, du propriétaire d’un seul bien au rentier confirmé.<br>
+					Ce service présente deux composantes principales ;<br><br>
+					- une plateforme en ligne (site web et app) permettant de centraliser toutes les informations et services nécessaires à une gestion complète et sereine du patrimoine immobilier et,<br><br>
+					- un gestionnaire locatif personnel à disposition 7j/7.<br><br>
+					Un gestionnaire locatif a pour objectif d’accompagner les propriétaires bailleurs en leur proposant différents services. Lorsque nos clients propriétaires
+					d’un ou plusieurs biens immobiliers	souhaitent les mettre en location, nos gestionnaires locatifs prennent en charge la totalité du processus de mise en location du bien,
+					de sélection du locataire, d'estimation du montant du loyer, de promotion du bien, d’état des lieux, etc.
+					Ensuite, nos gestionnaires locatifs s’occupent de la gestion locative courante du bien immobilier en location, grâce à un grand nombre de missions et aux relations de confiance
+					qu’ils entretiennent avec le locataire et les autres parties prenantes. L’objectif final étant de faire gagner du temps, de l’argent et de la tranquillité.
+				</p>
+</div>
+<div style="margin-top: -10%;">
+	<ul>
+		<li><a href="organigramme.html" style="text-decoration: none; color: white;" >Organigramme</a></li>
+		<li><a href="wireframe/home.html" style="text-decoration: none; color: white;">Wireframe - desktop version</a></li>
+		<li><a href="#" style="text-decoration: none; color: white;">Wireframe - mobile version</a></li>
+		<li><a href="contact.html" style="text-decoration: none; color: white;" >Contact us</a></li>
+	</ul>
+</div>
 </body>
 
+
 </html>
+
