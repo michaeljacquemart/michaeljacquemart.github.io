@@ -22,7 +22,7 @@ Ce service présente deux composantes principales ;
 
 Je ne me concentrerais que sur la version desktop de la plateforme.
 
-Un wireframe de celle-ci est disponible sur michaeljacquemart.me.
+Un wireframe de celle-ci est en cours sur michaeljacquemart.me.
 Il date des dernières vacances, j'espère que tu en pardonneras la qualité.
 L'asbence de design est voulue. C'est pour laisser la place de s'exprimer à la personne dédiée.
 
@@ -31,12 +31,14 @@ avant d'en avouer l'existence. Je me rends aussi compte que celui-ci est énorme
 prototype, un Minimum Viable Product.
 
 Les technologies m'intéressant étant plutôt dirigées vers javascript, Node.js et React, j'ai cherché des architectures d'application
-incorporant ces technologies. J'ai eu la chance de tomber sur quelques projets opensource proposant une infrastructure incorporant la majorité 
-des modules dont Propr.io aurait besoin ; emails, utilisateurs payants, upload et download de fichiers avec AWS, système de notifications, etc.
+incorporant celles-ci. J'ai eu la chance de tomber sur quelques projets opensource proposant une infrastructure incorporant la majorité 
+des modules dont Propr.io aurait besoin ; emails, utilisateurs payants, upload et download de fichiers avec AWS, système de notifications, etc. 
+J'en ai fait une liste dans l'onglet "divers" de michaeljacquemart.me.
 Je pourrais donc - si tu penses que ça a du sens - déployer une bonne partie des modules nécessaires avant les patûrages, pour ne se concentrer
 que sur ce qui demande du travail de création lors de ceux-ci. 
 
-Ainsi, nous aurions du temps pour nous préparer à attaquer ce projet, pour en amadouer les technologies et pour avoir une idée claire de l'organisation de notre patûrage. Nous pourrions aussi en profiter pour incorporer toute méthode se rapprochant du milieu professionnel (SCRUM, Agile, etc.).
+Ainsi, nous aurions du temps pour nous préparer à attaquer ce projet, pour en amadouer les technologies et pour avoir une idée claire de l'organisation de notre patûrage. 
+Nous pourrions aussi en profiter pour incorporer toute méthode se rapprochant du milieu professionnel (SCRUM, Agile, etc.).
 
 
 
