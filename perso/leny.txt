@@ -1,0 +1,80 @@
+Leny, 
+
+je te présente (par la présente) le projet dont je t'ai un peu parlé.
+
+Nous travaillons depuis un peu plus de 6 mois dessus avec Michael Marloye, que tu as rencontré aux admissions des Hamiltons.
+La première idée était simplement de créer un service dédié aux propriétaires de biens à louer. 
+Après de nombreux pivotements, nous avons introduit un dossier de candidature chez ALPI ( https://www.e-alpi.be ) et avons 
+été acceptés ( au nom de Michael Marloye). 
+Nous en sommes à quelques rendez-vous avec notre accompagnateur et je pense qu'il est maintenant temps que je t'en parle.
+
+
+En voici donc une légère présentation ;
+
+
+" Propr.io est un service proposé aux propriétaires de biens à louer, du propriétaire d’un seul bien au rentier confirmé. 
+Ce service présente deux composantes principales ;
+
+- une plateforme en ligne (site web et app) permettant de centraliser toutes les informations et services nécessaires à une gestion complète et sereine du patrimoine immobilier, et permettant de référencer les biens à louer (comme le ferait Immoweb) et,
+
+- un gestionnaire locatif personnel à disposition 7j/7. "
+
+
+Je ne me concentrerais que sur la version desktop de la plateforme.
+
+Un wireframe de celle-ci est disponible sur michaeljacquemart.me.
+Il date des dernières vacances, j'espère que tu en pardonneras la qualité.
+L'asbence de design est voulue. C'est pour laisser la place de s'exprimer à la personne dédiée.
+
+Je sais à quel point vous, les coachs, êtes occupés. J'ai donc attendu d'avoir une idée plus ou moins complète du produit final 
+avant d'en avouer l'existence. Je me rends aussi compte que celui-ci est énorme, c'est pourquoi je ne m'attaquerais qu'à un 
+prototype, un Minimum Viable Product.
+
+Les technologies m'intéressant étant plutôt dirigées vers javascript, Node.js et React, j'ai cherché des architectures d'application
+incorporant ces technologies. J'ai eu la chance de tomber sur quelques projets opensource proposant une infrastructure incorporant la majorité 
+des modules dont Propr.io aurait besoin ; emails, utilisateurs payants, upload et download de fichiers avec AWS, système de notifications, etc.
+Je pourrais donc - si tu penses que ça a du sens - déployer une bonne partie des modules nécessaires avant les patûrages, pour ne se concentrer
+que sur ce qui demande du travail de création lors de ceux-ci. 
+
+Ainsi, nous aurions du temps pour nous préparer à attaquer ce projet, pour en amadouer les technologies et pour avoir une idée claire de l'organisation de notre patûrage. Nous pourrions aussi en profiter pour incorporer toute méthode se rapprochant du milieu professionnel (SCRUM, Agile, etc.).
+
+
+
+Un petit mot sur mes capacités ;
+
+Il y a quelques semaines, nous parlions avec Victor du fait - étonnant, pour nous - d'avoir envie de revenir sur son lieu de travail le lendemain.
+C'est la première fois que ça nous arrive. On en revenait pas.
+
+Je suis de plus en plus conscient de la chance que j'ai... et je suis toujours aussi étonné d'avoir été accepté.
+Il m'a fallu quelques semaines pour me rendre compte que quasiment tous les co-apprenants avaient plus d'expérience que moi.
+J'avais fait 6 mois de C et pas mal de MATLAB, mais c'était tout. 
+HTML, CSS, linux,... jamais fait !
+
+Je suis donc à la limite de ma connaissance depuis le début, c'est pourquoi j'ai besoin de toi aujourd'hui. 
+Pas pour te prendre ton temps et venir t'ennuyer tout le temps avec des questions, mais plutôt pour une analyse.
+
+J'aimerais que tu juges les quelques choix que j'ai fait et que tu m'indiques ensuite, de ton petit bras, une direction éclairée.
+
+J'ai simplement besoin de savoir si je n'ai pas fait n'importe quoi depuis le début.
+
+
+
+
+
+
++ conseils de la part de qui ? Référencement ? frais ? matos ? J'aurai énormément de questions, je les pose à qui ? Est-ce que je devrais parler librement à n'importe qui du projet ? Pas très sûr si on veut garder notre idée...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
