@@ -4,12 +4,7 @@
   <meta charset="utf-8">
   <title>Propr.io</title>
   <script type="text/javascript">
-
-   /* This program will swap an image when it is clicked by using the getElementById() method
-   The program will use an image_tracker variable to keep track of which image is currently displayed
-   We can use an IF statement to check if the orange picture is being displayed,
-   then swap with the blue one, and vice versa.
-   */
+  // Leny, si tu regardes la structure de cette page, ne me juge pas.
 
    var search_tracker = 'search';
 
@@ -58,12 +53,25 @@
   <form>
     <input type="button" value="Back" onclick="history.back()">
   </form>
-<p>clickez sur les différentes parties du wireframe pour en afficher les différentes fonctionnalités</p> <br><br> 
+<p>Cette partie du wireframe présente la page sur laquelle un utilisateur arriverait en se rendant sur http://www.propr.io <br>
+Au dessus, un en-tête permettant la connexion à l'application web de gestion locative.<br>
+En dessous de cet en-tête, deux liens simulant la connexion à un compte propriétaire et un compte locataire. Le lien menant au compte locataire est en construction.<br>
+Le reste de la page démarrant en dessous de ces deux liens concerne la partie "référencement" de Propr.io,<br>
+inspirée des sites d'annonces immobilières (Immoweb, Immovlan, Zimmo, etc.). Elle comporte 5 onglets :<br>
+- "Rechercher un bien", une recherche dans une base de données d'annonces générées à partir des informations recues par l'application web de gestion locative,<br>
+- "Obtenir un gestionnaire", un gestionnaire personnel gère les visites, états des lieux, problèmes éventuels du locataire, etc. Cet onglet explique cette possibilité.<br>
+- "Gérer mes locataires" présente l'application web de gestion locative.<br>
+- "Placer une annonce" permet à un propriétaire n'ayant pas accès à l'application web de gestion locative de poster une annonce. Celle-ci est limitée en taille et en référencement sur l'onglet "Rechercher un bien".<br>
+- "Services et tarifs" résume les différents comptes et tarifs possibles pour une vue plus claire des options précédentes.<br><br>
+
+Cliquez sur une annonce pour en voir un exemple.
+
+</p> <br><br> 
 <img id ="en_tete" class="header" src="img/home/en_tete_services.png" style="width:100%; margin-bottom: 10px;"/>
 <br>
-<a href="proprietaire.html" style="float:left;">connexion propriétaire (plateforme de gestion locative)</a>
+<a href="proprietaire.html" style="float:left;">connexion propriétaire (application web de gestion locative)</a>
 <br>
-<a href="locataire.html" style="float:left;">connexion locataire (plateforme de gestion locative)</a>
+<a href="locataire.html" style="float:left;">connexion locataire (application web de gestion locative)</a>
 <br>
 <img id="menu" src="img/home/leftmenu/leftmenu_rechercher.png" style="float:left;" onclick="change_menu();"/>
 <img src="img/home/search.png" alt="Search" id="search" style="width:35%; float:left; margin-top:3%;" onclick="change_search();">
