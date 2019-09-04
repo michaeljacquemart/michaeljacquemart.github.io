@@ -11,51 +11,47 @@
       function change_entete(){
       var image = document.getElementById('en_tete');
       if(entete_tracker=='open'){
-      image.src='img/proprietaire/proprietaire_entete_closed.png';
+      image.src='img/locataire/locataire_entete_closed.png';
       entete_tracker='closed';
       }
       else if(entete_tracker=='closed'){
-      image.src='img/proprietaire/proprietaire_entete_open.png';
+      image.src='img/locataire/locataire_entete_open.png';
       entete_tracker='open';
       }
 
       }
 
 
-      var onglets_tracker = 'mesbiens'
+      var onglets_tracker = 'monlogement'
       function change_onglets(){
         var image = document.getElementById('onglets');
-        if(onglets_tracker=='mesbiens'){
-        image.src='img/proprietaire/proprietaire_meslocataires.png';
-        onglets_tracker='meslocataires';
-        }
-        else if(onglets_tracker=='meslocataires'){
-        image.src='img/proprietaire/proprietaire_finances.png';
+        if(onglets_tracker=='monlogement'){
+        image.src='img/locataire/locataire_finances.png';
         onglets_tracker='finances';
         }
         else if(onglets_tracker=='finances'){
-        image.src='img/proprietaire/proprietaire_agenda.png';
+        image.src='img/locataire/locataire_agenda.png';
         onglets_tracker='agenda';
         }
         else if(onglets_tracker=='agenda'){
-        image.src='img/proprietaire/proprietaire_documents.png';
+        image.src='img/locataire/locataire_documents.png';
         onglets_tracker='documents';
         }
         else if(onglets_tracker=='documents'){
-        image.src='img/proprietaire/proprietaire_partenaires.png';
+        image.src='img/locataire/locataire_partenaires.png';
         onglets_tracker='partenaires';
         }
         else if(onglets_tracker=='partenaires'){
-        image.src='img/proprietaire/proprietaire_news_infos.png';
+        image.src='img/locataire/locataire_news_infos.png';
         onglets_tracker='news_infos';
         }
         else if(onglets_tracker=='news_infos'){
-        image.src='img/proprietaire/proprietaire_servicessupp.png';
+        image.src='img/locataire/locataire_servicessupp.png';
         onglets_tracker='servicessupp';
         }
         else if(onglets_tracker=='servicessupp'){
-        image.src='img/proprietaire/proprietaire_mesbiens.jpg';
-        onglets_tracker='mesbiens';
+        image.src='img/locataire/locataire_monlogement.jpg';
+        onglets_tracker='monlogement';
         }
 
 
@@ -72,11 +68,11 @@
   Présentation de l'application web de gestion locative coté locataire ;<br><br>
   L'application permet à un locataire de gérer sa location, son logement, les balances de paiements, son agenda, ses documents légaux et permettra aussi de trouver<br>
   un homme de métier ou tout autre professionnel utile dans la gestion d'une location (assureurs, avocats, fournisseurs d'énergie, internet, etc.).<br>
-  
 
 
-  <img  id="en_tete" src="img/proprietaire/proprietaire_entete_open.png" onclick="change_entete()" style="width:100%"/>
-  <img  id="onglets" src="img/proprietaire/proprietaire_mesbiens.jpg" onclick="change_onglets()" style="width:100%; margin-left:1.85%;"/>
+
+  <img  id="en_tete" src="img/locataire/locataire_entete_open.png" onclick="change_entete()" style="width:100%"/>
+  <img  id="onglets" src="img/locataire/locataire_monlogement.jpg" onclick="change_onglets()" style="width:100%; margin-left:1.85%;"/>
 
 
 </body>
