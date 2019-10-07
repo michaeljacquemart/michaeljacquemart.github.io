@@ -1,2 +1,0 @@
-Stripe
-Mollie ( accepte paypal, ce que stripe ne fait pas )
