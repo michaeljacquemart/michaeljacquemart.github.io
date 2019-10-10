@@ -12,4 +12,13 @@ Liste des sites à comparer ;
 -immo.trovit.be
 -skot.be
 -realo.be
+-immo-particulier.be
 
+
+
+statistiques 
+https://www.cim.be/fr/internet/resultats-belgique
+
+
+
+pour 2018, site web + app de immoweb = 426.000 visites journalières
